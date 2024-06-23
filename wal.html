@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Pricing Tables | CodingNepal</title>
+    <link rel="stylesheet" href="wallet.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body >
+  <img src="eCommerce-Payment-Gateways-feature-1024x647.jpg" style="margin-top: 10rem; width:50%">
+  <div class="wrapper" style="margin-left: 55rem; margin-top: -35rem;">
+    <div class="table basic">
+      <div class="price-section">
+        <div class="price-area">
+          <div class="inner-area">
+            <span class="text"></span>
+            <span class="price" id="totalAmount">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="package-name">Balance</div>
+      <div class="btn"><button id="addMoneyBtn">Add money to Wallet</button></div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="paymentModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Add Amount</h2>
+      <form id="amountForm">
+        <label for="amount">Enter Amount</label>
+        <input type="number" id="amount" name="amount" required>
+        <div class="prebuilt-amounts">
+          <button type="button" class="prebuilt-amount" data-amount="50">₹50</button>
+          <button type="button" class="prebuilt-amount" data-amount="100">₹100</button>
+          <button type="button" class="prebuilt-amount" data-amount="200">₹200</button>
+          <button type="button" class="prebuilt-amount" data-amount="500">₹500</button>
+        </div>
+        <button type="submit">Proceed to Payment</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="pay.js"></script>
+</body>
+</html>

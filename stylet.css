@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #f0f5ff; /* Light blue background */
+}
+
+.heading {
+  background: #32CD32; /* Green header background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.container .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #0be21a, #93c1ae);
+}
+
+.container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.container .inputBox {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+
+.container .inputBox span {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.container .inputBox input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.container .inputBox input:focus,
+.container .inputBox input:valid {
+  border-color: #32CD32;
+}
+
+.container .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.container .button a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #32CD32, #006400); /* Green gradient background */
+}
+
+.container .button a:hover {
+  background: linear-gradient(-135deg, #32CD32, #006400); /* Green gradient background on hover */
+}

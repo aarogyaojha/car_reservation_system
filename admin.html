@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="adminstyle.css" />
+  <title>Parking Reservation System</title>
+</head>
+<body>
+  <div class="parking-container">
+    <label>Pick a location:</label>
+    <select id="location"></select>
+  </div>
+
+  <div class="customer-container">
+    <label>Pick a customer:</label>
+    <select id="customer"></select>
+  </div>
+
+  <div id="customer-details">
+    <p>Name: <span id="customer-name"></span></p>
+    <p>License Plate: <span id="customer-licensePlate"></span></p>
+    <p>Address: <span id="customer-address"></span></p>
+    <p>Time: <span id="customer-time"></span></p>
+    <p>Hours: <span id="customer-hours"></span></p>
+  </div>
+
+  <div id="buttons-container"></div>
+  
+  <button id="reserve">Reserve</button>
+
+  <!-- <p class="text">
+    You have selected <span id="count">0</span> slots.
+  </p> -->
+
+  <div class="reservation-list">
+    <h2>Reservations:</h2>
+    <ul id="reservation-list"></ul>
+  </div>
+
+  <script src="adminscript.js"></script>
+</body>
+
+</html>

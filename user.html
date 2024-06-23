@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Reservation System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Parking Reservation System</h1>
+        <div id="map" class="map"></div>
+        <form id="reservationForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="licensePlate">License Plate:</label>
+                <input type="text" id="licensePlate" placeholder="ABC-1234" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Parking Location:</label>
+                <select id="location" required>
+                    <option value="">Select a location</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" disabled>
+            </div>
+            <div class="form-group">
+                <label for="time">Time of Parking:</label>
+                <input type="time" id="time" required>
+            </div>
+            <div class="form-group">
+                <label for="hours">Hours to Park:</label>
+                <input type="number" id="hours" min="1" max="24" required>
+            </div>
+            <button type="submit">Reserve</button>
+        </form>
+        <h2>Current Reservations</h2>
+        <ul id="reservationsList"></ul>
+        <div id="message" class="message"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

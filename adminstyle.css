@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #242333;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Lato', 'sans-serif';
+}
+
+.parking-container {
+  margin: 20px 0;
+}
+
+.parking-container select {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+#buttons-container {
+  margin: 20px 0;
+}
+
+#buttons-container button {
+  background-color: #444451;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#buttons-container button.selected {
+  background-color: #6feaf6;
+}
+
+#buttons-container button:hover {
+  background-color: #6feaf6;
+}
+
+#reserve {
+  background-color: #6feaf6;
+  color: #242333;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.reservation-list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.reservation-list h2 {
+  margin-bottom: 10px;
+}
+
+.reservation-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.reservation-list li {
+  background-color: #444451;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.customer-container {
+  margin: 20px 0;
+}
+
+.customer-container select {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+#customer-details {
+  margin: 20px 0;
+  text-align: left;
+}
+
+#customer-details p {
+  margin: 5px 0;
+}
+
+#buttons-container button.booked {
+  background-color: red;
+  cursor: not-allowed;
+}
+
+#buttons-container button.selected {
+  background-color: #6feaf6;
+}
+
+#buttons-container button:hover:not(.booked) {
+  background-color: #6feaf6;
+}
+
